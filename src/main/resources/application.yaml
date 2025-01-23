@@ -1,7 +1,18 @@
+server:
+  port: 9001
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - metrics
+          - prometheus
+springdoc:
+  api-docs:
+    path: /api-docs
 spring:
-#  data:
-#    mongodb:
-#      uri: mongodb+srv://trainingdbnttdata:zMaT0bwJ86xps4wN@proyectobootcamp.jyiov.mongodb.net/accounts
   application:
     name: bs-pet-store-v1
   datasource:
@@ -29,20 +40,7 @@ spring:
 #          destination: rb1j5rt0-updaccountbc
 #        output-out-0:
 #          destination: rb1j5rt0-yankiout
-server:
-  port: 9001
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - health
-          - info
-          - metrics
-          - prometheus
-springdoc:
-  api-docs:
-    path: /api-docs
+
 #eureka config
 #eureka:
 #  client:
