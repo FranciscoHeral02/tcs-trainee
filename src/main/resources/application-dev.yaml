@@ -13,13 +13,17 @@ springdoc:
   api-docs:
     path: /api-docs
 spring:
-#  data:
-#    mongodb:
-#      uri: mongodb+srv://trainingtcs:Miyatekelo123!@cluster0.jyiov.mongodb.net/petstore?retryWrites=true&w=majority&appName=Cluster0
+  config:
+    activate:
+      on-profile:
+        - dev
   r2dbc:
     url: r2dbc:postgresql://localhost:5432/postgres
     username: postgres
     password: 12345
+  #  data:
+  #    mongodb:
+  #      uri: mongodb+srv://trainingtcs:Miyatekelo123!@cluster0.jyiov.mongodb.net/petstore?retryWrites=true&w=majority&appName=Cluster0
   application:
     name: bs-pet-store-v1
 logging:

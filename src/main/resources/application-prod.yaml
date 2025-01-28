@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9011
 management:
   endpoints:
     web:
@@ -13,9 +13,9 @@ springdoc:
   api-docs:
     path: /api-docs
 spring:
-#  data:
-#    mongodb:
-#      uri: mongodb+srv://trainingtcs:Miyatekelo123!@cluster0.jyiov.mongodb.net/petstore?retryWrites=true&w=majority&appName=Cluster0
+  #  data:
+  #    mongodb:
+  #      uri: mongodb+srv://trainingtcs:Miyatekelo123!@cluster0.jyiov.mongodb.net/petstore?retryWrites=true&w=majority&appName=Cluster0
   r2dbc:
     url: r2dbc:postgresql://localhost:5432/postgres
     username: postgres
